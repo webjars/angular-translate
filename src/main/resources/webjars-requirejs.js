@@ -5,6 +5,6 @@
 //
 requirejs.config({
     shim: {
-        'bootstrap': [ 'webjars!jquery.js' ]
+        'angular-translate': [ 'webjars!angular.js' ]
     }
 });
