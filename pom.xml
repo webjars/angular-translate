@@ -26,8 +26,8 @@
 
     <licenses>
         <license>
-            <name>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE, v2</name>
-            <url>https://github.com/PascalPrecht/angular-translate/blob/master/LICENSE</url>
+            <name>MIT</name>
+            <url>https://github.com/angular-translate/angular-translate/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -43,14 +43,14 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>angularjs</artifactId>
-            <version>1.0.7</version>
+            <version>1.2</version>
         </dependency>
     </dependencies>
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>2.0.1</upstream.version>
-        <upstream.url>https://raw.github.com/PascalPrecht/bower-angular-translate/${upstream.version}</upstream.url>
+        <upstream.url>https://raw.github.com/angular-translate/bower-angular-translate/${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
     
