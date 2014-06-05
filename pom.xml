@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-translate</artifactId>
-    <version>2.1.1-SNAPSHOT</version>
+    <version>2.1.0-1-SNAPSHOT</version>
     <name>angular-translate</name>
     <description>WebJar for angular-translate</description>
     <url>http://webjars.org</url>
@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>angularjs</artifactId>
-            <version>1.2.16</version>
+            <version>1.2.16-2</version>
         </dependency>
     </dependencies>
     
@@ -52,6 +52,12 @@
         <upstream.version>2.1.0</upstream.version>
         <upstream.url>https://raw.github.com/angular-translate/bower-angular-translate/${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": { "angular-translate": "angular-translate" },
+                "shim": { "angular-translate": [ "angular" ] }
+            }
+        </requirejs>
     </properties>
     
     <build>
